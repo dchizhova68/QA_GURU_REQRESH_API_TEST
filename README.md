@@ -46,6 +46,7 @@
 
 Из корневой директории проекта выполнить:
 ```
+gradle clean full_test -Denv=local   - запуск всех тестов
 gradle clean account_test -Denv=local  - запуск тестов на проверку создания и регистрации пользователя
 gradle clean userData_test -Denv=local   - запуск тестов на проверку данных пользователя
 
