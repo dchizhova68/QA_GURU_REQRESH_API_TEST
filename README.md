@@ -68,7 +68,7 @@ gradle clean userData_test -Denv=local   - запуск тестов на про
 - BASE_URI (адрес основной страницы тестируемого сайта для API-тестов)
   
 <p align="center">
-<img title="parametrs" src="src/media/screenshots/parametrs.JPG">
+<img title="parametrs" src="src/media/screenshots/parametrsBuild.JPG">
 </p>
 
 
