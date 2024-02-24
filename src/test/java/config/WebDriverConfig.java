@@ -8,12 +8,6 @@ import org.aeonbits.owner.Config;
 
 public interface WebDriverConfig extends Config {
 
-    @Key("browser")
-    String getBrowserName();
-
-    @Key("version")
-    String getBrowserVersion();
-
     @Key("remote")
     String getRemoteWebDriver();
 

@@ -19,9 +19,6 @@ public class TestBase {
     static void beforeAll()  {
         WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
-        Configuration.browser = config.getBrowserName();
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.browserVersion = config.getBrowserVersion();
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 10000;
         Configuration.baseUrl = System.getProperty("baseUrl", "https://reqres.in");
