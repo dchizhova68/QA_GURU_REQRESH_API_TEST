@@ -1,6 +1,7 @@
 # Проект по автоматизации тестирования API для сайта [Reqres](https://reqres.in)
-
+<p align="center">
 <img alt="litres" src="src/media/screenshots/mainPage.JPG">
+</p>
 
 ## :scroll: Содержание:
 * <a href="#tools">Используемый стек</a>
