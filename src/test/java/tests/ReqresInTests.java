@@ -89,7 +89,7 @@ public class ReqresInTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @Tag("ACCOUNT")
     void deleteUserTest() {
-        CreateUserResponseModel userData = step("Создаем нового пользовтеля", () ->
+        CreateUserResponseModel userData = step("Создаем нового пользователя", () ->
                 CreateUserApi.createUser("Chemist", "Test User")
         );
         step("Удаляем пользователя", () ->
