@@ -1,4 +1,5 @@
 package models.registerModel;
+
 import lombok.Data;
 
 @Data

@@ -1,7 +1,8 @@
 package api;
 
 import static io.restassured.RestAssured.given;
-import static specs.Specs.*;
+import static specs.Specs.deleteUserRequestSpec;
+import static specs.Specs.deleteUserResponseSpec;
 
 public class DeleteApi {
     public static void deleteUser(String userId) {

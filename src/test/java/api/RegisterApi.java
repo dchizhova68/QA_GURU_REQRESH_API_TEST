@@ -3,7 +3,6 @@ package api;
 import models.errorResponseModel.ErrorResponseModel;
 import models.registerModel.RegisterRequestModel;
 import models.registerModel.RegisterResponseModel;
-import models.usersModel.UsersResponseModel;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;

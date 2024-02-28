@@ -77,7 +77,4 @@ task userData_test(type: Test) {
     }
 }
 
-task full_test(type: Test) {
-    useJUnitPlatform ()
-}
 
