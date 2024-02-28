@@ -1,6 +1,7 @@
 # Проект по автоматизации тестирования API для сайта [Reqres](https://reqres.in)
-
+<p align="center">
 <img alt="litres" src="src/media/screenshots/mainPage.JPG">
+</p>
 
 ## :scroll: Содержание:
 * <a href="#tools">Используемый стек</a>
@@ -28,6 +29,7 @@
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="src/media/logo/Jenkins.svg"></a>
 <a href="https://web.telegram.org/a/"><img width="6%" title="Telegram" src="src/media/logo/Telegram.svg"></a>
 <a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="src/media/logo/Jira.svg"></a>
+<a href="https://rest-assured.io/"><img width="6%" title="RestAssured" src="src/media/logo/restAssured.png"></a>
 </p>
 
 
