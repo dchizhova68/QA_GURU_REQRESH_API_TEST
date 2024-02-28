@@ -1,6 +1,6 @@
 # Проект по автоматизации тестирования API для сайта [Reqres](https://reqres.in)
 <p align="center">
-<img alt="litres" src="src/media/screenshots/mainPage.JPG">
+<img alt="litres" src="src/media/screenshots/mainPageApi.JPG">
 </p>
 
 ## :scroll: Содержание:
@@ -66,7 +66,7 @@ gradle clean userData_test -Denv=local   - запуск тестов на про
 - BASE_URI (адрес основной страницы тестируемого сайта для API-тестов)
   
 <p align="center">
-<img title="parametrs" src="src/media/screenshots/parametrsBuild.JPG">
+<img title="parametrs" src="src/media/screenshots/parametrsBuildApi.JPG">
 </p>
 
 
@@ -74,7 +74,7 @@ gradle clean userData_test -Denv=local   - запуск тестов на про
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="src/media/logo/Allure.svg"> </a> Пример  [Allure-отчета](https://jenkins.autotests.cloud/job/student-dchizhova68-qa_guru23_requresin_api-Test/1/allure/#suites/1969f4b716b64ad3cd60c4e9de608bc5/f3bffbe1e44110cc/) </a>  
 Дождаться выполнения сборки. Нажать на кнопку "Allure Report"
 
-![jenkins](src/media/screenshots/AllureReportLink.png "Отчет")
+![jenkins](src/media/screenshots/AllureReportLinkApi.png "Отчет")
 
 Пример Allure Report: 
 ![jenkins](src/media/screenshots/AllureReport.JPG "Пример отчета")
@@ -85,7 +85,7 @@ gradle clean userData_test -Denv=local   - запуск тестов на про
 Реализована интеграция с <code>Allure TestOps</code>. Есть возможность просмотре результата выполнения автотестов и создания ручных тестов. 
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="src/media/screenshots/AllureTestOps.JPG">
+<img title="Allure TestOps DashBoard" src="src/media/screenshots/AllureTestOpsApi.JPG">
 </p>
 
 
@@ -95,7 +95,7 @@ gradle clean userData_test -Denv=local   - запуск тестов на про
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в задаче отображаются связные автотесты и результат их выполнения.
 
 <p align="center">
-<img title="Jira Task" src="src/media/screenshots/JiraTask.JPG">
+<img title="Jira Task" src="src/media/screenshots/JiraTaskApi.JPG">
 </p>
 
 
@@ -105,6 +105,6 @@ gradle clean userData_test -Denv=local   - запуск тестов на про
 Результаты выполнения автотестов отправляются в Telegram.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="src/media/screenshots/TelegramBot.JPG">
+<img width="70%" title="Telegram Notifications" src="src/media/screenshots/TelegramBotApi.JPG">
 </p>
 
