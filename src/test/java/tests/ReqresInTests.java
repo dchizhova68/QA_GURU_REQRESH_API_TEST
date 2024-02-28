@@ -35,7 +35,6 @@ public class ReqresInTests extends TestBase {
         );
     }
 
-
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование запроса на создание нового пользователя")
@@ -50,7 +49,6 @@ public class ReqresInTests extends TestBase {
                 CreateUserApi.checkUserDataFromResponse("Chemist", "Diana Rose", userData)
         );
     }
-
 
     @Owner("Darya Chizhova")
     @Test
@@ -68,7 +66,6 @@ public class ReqresInTests extends TestBase {
         );
     }
 
-
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование запроса на регистрацию")
@@ -85,7 +82,6 @@ public class ReqresInTests extends TestBase {
         );
     }
 
-
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование запроса на удаление пользователя")
@@ -101,11 +97,10 @@ public class ReqresInTests extends TestBase {
         );
     }
 
-
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование данных пользователя")
-    @DisplayName("Проверка соответствия почты пользователю")
+    @DisplayName("Поиск пользователя в списке и проверка почты найденного ползователя")
     @Severity(SeverityLevel.NORMAL)
     @Tag("USER_DATA")
     void findUserInlistTest() {
