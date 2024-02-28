@@ -10,7 +10,6 @@ import models.errorResponseModel.ErrorResponseModel;
 import models.registerModel.RegisterResponseModel;
 import models.usersModel.UsersResponseModel;
 import models.usersModel.UserslistModel;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -19,7 +18,7 @@ import static io.qameta.allure.Allure.step;
 
 @DisplayName("Проверка api запросов сайта https://reqres.in")
 public class ReqresInTests extends TestBase {
-    @Disabled
+
     @Owner("Darya Chizhova")
     @Feature("Тестирование данных пользователя")
     @Test
@@ -36,7 +35,7 @@ public class ReqresInTests extends TestBase {
         );
     }
 
-    @Disabled
+
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование запроса на создание нового пользователя")
@@ -52,7 +51,7 @@ public class ReqresInTests extends TestBase {
         );
     }
 
-    @Disabled
+
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование запроса на регистрацию")
@@ -69,7 +68,7 @@ public class ReqresInTests extends TestBase {
         );
     }
 
-    @Disabled
+
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование запроса на регистрацию")
@@ -86,7 +85,7 @@ public class ReqresInTests extends TestBase {
         );
     }
 
-    @Disabled
+
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование запроса на удаление пользователя")
