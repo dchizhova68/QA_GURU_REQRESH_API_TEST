@@ -77,7 +77,7 @@ gradle clean userData_test - запуск тестов на проверку д�
 ![jenkins](src/media/screenshots/AllureReportLinkApi.png "Отчет")
 
 Пример Allure Report: 
-![jenkins](src/media/screenshots/AllureReport.JPG "Пример отчета")
+![jenkins](src/media/screenshots/AllureReportApi.JPG "Пример отчета")
 
 <a id="allure-testops"></a>
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="src/media/logo/Allure_TO.svg"> </a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4074/dashboards) </a> 
