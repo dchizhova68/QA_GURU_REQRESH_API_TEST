@@ -1,7 +1,6 @@
 package api;
 
-import models.usersModel.UserDataResponseModel;
-import models.usersModel.UserslistModel;
+import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -9,19 +8,19 @@ import static specs.Specs.successUserListResponseSpec;
 import static specs.Specs.userListRequestSpec;
 
 public class UserListApi {
-    public static UserslistModel getUserList() {
+
+    public static Response getUserList() {
+        //  return get("/api/users?page=1");
         return given(userListRequestSpec)
                 .get()
                 .then()
                 .spec(successUserListResponseSpec)
-                .extract().as(UserslistModel.class);
+                .extract()
+                .response();
     }
 
-    public static void checkUserEmail(String email, String firstName, String lastName, UserslistModel userList) {
-        for (UserDataResponseModel user : userList.getData()) {
-            if (user.getFirstName() == firstName && user.getLastName() == lastName) {
-                assertEquals(email, user.getEmail());
-            }
-        }
+    public static void checkUserEmail(String email, String firstName, String lastName, Response userList) {
+        String userEmail = userList.path("data.findAll {it.first_name == '%s'}.find {it.last_name == '%s'}.email", firstName, lastName);
+        assertEquals(userEmail, email);
     }
 }

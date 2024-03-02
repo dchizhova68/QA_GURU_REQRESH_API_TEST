@@ -5,11 +5,11 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.restassured.response.Response;
 import models.createUserModel.CreateUserResponseModel;
 import models.errorResponseModel.ErrorResponseModel;
 import models.registerModel.RegisterResponseModel;
 import models.usersModel.UsersResponseModel;
-import models.usersModel.UserslistModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -100,18 +100,16 @@ public class ReqresInTests extends TestBase {
     @Owner("Darya Chizhova")
     @Test
     @Feature("Тестирование данных пользователя")
-    @DisplayName("Поиск пользователя в списке и проверка почты найденного ползователя")
+    @DisplayName("Поиск пользователя в списке по имени и фамилии и проверка почты найденного ползователя")
     @Severity(SeverityLevel.NORMAL)
     @Tag("USER_DATA")
-    void findUserInlistTest() {
-
-        UserslistModel userList = step("Отправляем запрос на получение списка пользователей", () ->
+    void findUserInlistAndCheckEmailTest() {
+        Response userList = step("Отправляем запрос на получение списка пользователей", () ->
                 UserListApi.getUserList()
         );
 
         step("Проверяем почту пользователя из списка", () ->
                 UserListApi.checkUserEmail("emma.wong@reqres.in", "Emma", "Wong", userList)
         );
-
     }
 }
